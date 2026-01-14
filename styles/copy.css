@@ -1,0 +1,8 @@
+.copy-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,115 @@
+/* =========================
+   Terminal Layout
+========================= */
+
+/* Terminal hidden by default */
+.terminal-wrapper {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+/* Terminal visible */
+.terminal-wrapper.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.terminal {
+  width: 100%;
+  max-width: 900px;
+  height: 520px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.terminal-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  background: rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid var(--border-glass);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.terminal-buttons .btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.btn.close { background: #ff5f57; }
+.btn.minimize { background: #ffbd2e; }
+.btn.maximize { background: #28c940; }
+
+.terminal-title {
+  margin-left: 12px;
+  color: var(--text-muted);
+}
+
+/* Body */
+.terminal-body {
+  flex: 1;
+  padding: 14px;
+  overflow-y: auto;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.line {
+  display: flex;
+  gap: 6px;
+  white-space: pre-wrap;
+}
+
+.prompt {
+  color: var(--accent-green);
+}
+
+.text {
+  color: var(--text-main);
+}
+
+/* Input */
+.terminal-input {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  border-top: 1px solid var(--border-glass);
+  font-family: var(--font-mono);
+}
+
+.terminal-input input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  margin-left: 6px;
+  caret-color: var(--accent-green);
+}
+
+/* Scrollbar */
+.terminal-body::-webkit-scrollbar {
+  width: 6px;
+}
+.terminal-body::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 3px;
+}

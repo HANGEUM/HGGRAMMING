@@ -1,0 +1,58 @@
+h1 {
+    font-family: var(--font-mono);
+    font-size: 32px;
+    color: var(--accent-green);
+    margin-bottom: 6px;
+}
+
+.version-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--glass-bg);
+  box-shadow: var(--glass-shadow);
+}
+
+.version-content h1 {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.version-content h2 {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.version-content p {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.version-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.version-content li {
+  margin-bottom: 6px;
+}
+
+.tilted-card {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-5deg);
+  width: 300px;
+  height: 200px;
+  background: var(--glass-bg);
+  box-shadow: var(--glass-shadow);
+  border-radius: 20px;
+  z-index: -1;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HGGRAMMING · About</title>
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/theme.css" />
+  <link rel="stylesheet" href="./styles/about.css" />
+  <link rel="stylesheet" href="./styles/copy.css" />
+  <link rel="stylesheet" href="./styles/popup.css" />
+</head>
+<body>
+
+<nav class="top-nav-title glass">
+  HGGRAMMING
+</nav>
+
+<!-- Top Nav -->
+<nav class="top-nav glass">
+  <ul class="nav-tabs">
+    <li><a href="index.html">🏠&nbsp;&nbsp;&nbsp;홈</a></li>
+    <li><a href="videos.html">📼&nbsp;&nbsp;&nbsp;영상</a></li>
+    <li><a href="lab.html">?&nbsp;&nbsp;&nbsp;Lab</a></li>
+    <li><a href="about.html" class="active">ℹ️&nbsp;&nbsp;&nbsp;About</a></li>
+  </ul>
+</nav>  
+
+<nav class="top-nav-request glass">
+  <ul class="nav-tabs">
+    <li><a href="request.html">🗨️&nbsp;&nbsp;&nbsp;콘텐츠 추천</a></li>
+    <li><a href="ver.html">⏫&nbsp;&nbsp;&nbsp;버전</a></li>
+  </ul>
+</nav>
+<br/><br/><br/><br/><br/><br/><br/>
+  <!-- Content -->
+  <main class="about-container">
+
+    <section class="about-card glass">
+      <h2>👨‍💻 Channel</h2>
+      <p>
+        <strong>HGGRAMMING</strong>은  
+        운영체제, 저수준 프로그래밍, 가상머신, 시스템 구조를  
+        <em>직접 만들고, 깨뜨리고, 분석</em>하는 개발 채널입니다.
+      </p>
+    </section>
+
+    <section class="about-card glass">
+      <h2>🧪 What I Do</h2>
+      <ul>
+        <li>OS 개발</li>
+        <li>시스템 프로그래밍</li>
+        <li>가상머신 & 에뮬레이터 실험</li>
+        <li>개발 삽질 로그 & 구조 분석</li>
+      </ul>
+    </section>
+
+    <section class="about-card glass">
+      <h2>📺 YouTube</h2>
+      <p>
+        다양한 주제의 영상 콘텐츠를  
+        <strong>유튜브 채널</strong>에 업로드하고 있습니다.
+      </p>
+      <a
+        href="https://www.youtube.com/@%ED%95%9C%EA%B8%88%EA%B7%B8%EB%9E%98%EB%B0%8D"
+        target="_blank"
+        class="about-link"
+      >
+        → Visit YouTube Channel
+      </a>
+    </section>
+
+    <section class="about-card glass">
+  <h2>🐙 GitHub</h2>
+
+  <p>
+    다양한 프로젝트와 실험 코드를  
+    <strong>GitHub</strong>에 공개하고 있습니다.
+  </p>
+
+  <a
+    href="https://github.com/HANGEUM"
+    target="_blank"
+    class="about-link"
+  >
+    → github.com/HANGEUM
+  </a>
+</section>
+
+<section class="about-card glass">
+  <h2>✉️ Contact</h2>
+
+  <p>
+    문의 사항이이 있으시면  
+    아래 이메일로 연락해 주세요.
+    <br><br>
+    <code>
+    <strong>hgtube0307@gmail.com</strong>
+    &nbsp;&nbsp;
+    |
+    <button class="copy-button glass"
+    onclick="copyText('hgtube0307@gmail.com')"
+    id="openBtn">Copy</button>
+    </code>
+  </p>
+</section>
+
+<!-- 팝업 구조 -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>작업 완료</h3>
+        <br><hr><br>
+        <p>복사되었습니다!</p>
+        <br>
+        <p>복사된 내용 : 
+          <code>
+            hgtube0307@gmail.com
+            &nbsp;&nbsp;
+            |
+            <button class="copy-button glass"
+            onclick="copyText('hgtube0307@gmail.com')"
+            id="openBtn">Copy</button>
+          </code>
+        </p>
+    </div>
+</div>
+
+<br/><br/><br/>
+
+  </main>
+<script src="scripts/about.js"></script>
+<script src="scripts/copy.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HGGRAMMING :: Experimental Dev Lab</title>
+
+  <!-- SEO -->
+  <meta name="description" content="HGGRAMMING - 개발, OS, 가상머신 실험 기록 채널" />
+  <meta name="author" content="HGGRAMMING" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/public/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/theme.css" />
+  <link rel="stylesheet" href="./styles/terminal.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+
+  <script>
+    // 브라우저의 스크롤 복원 기능 끄기
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+
+    // 페이지 로드 시 항상 맨 위로 이동
+    window.addEventListener('load', function() {
+        window.scrollTo(0, 0);
+    });
+
+    // 뒤로가기/앞으로가기 시에도 맨 위로 이동 (SPA, 캐시 로드 포함)
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) { // 캐시에서 불러온 경우
+            window.scrollTo(0, 0);
+        }
+    });
+  </script>
+</head>
+
+<body>
+  <nav class="top-nav-title glass">
+    HGGRAMMING
+  </nav>
+  <!-- Top Navigation Tabs -->
+  <nav class="top-nav glass">
+    <ul class="nav-tabs">
+      <li><a href="index.html" class="active">🏠&nbsp;&nbsp;&nbsp;홈</a></li>
+      <li><a href="videos.html">📼&nbsp;&nbsp;&nbsp;영상</a></li>
+      <li><a href="lab.html">?&nbsp;&nbsp;&nbsp;Lab</a></li>
+      <li><a href="about.html">ℹ️&nbsp;&nbsp;&nbsp;About</a></li>
+    </ul>
+  </nav>
+
+  <nav class="top-nav-request glass">
+    <ul class="nav-tabs">
+      <li><a href="request.html">🗨️&nbsp;&nbsp;&nbsp;콘텐츠 추천</a></li>
+      <li><a href="ver.html">⏫&nbsp;&nbsp;&nbsp;버전</a></li>
+    </ul>
+  </nav>
+<!-- Channel Intro -->
+<section class="channel-intro glass">
+  <h1>개발 · 운영체제 · 가상머신 · 시스템 실험 기록 채널<br><strong>HGGRAMMING</strong></h1>
+  <p class="description">
+    <span class="highlight">개발 · 운영체제 · 가상머신 · 시스템 실험</span>을 기록합니다.<br/>
+  </p>
+
+  <div class="intro-links">
+    <a href="https://www.youtube.com/@%ED%95%9C%EA%B8%88%EA%B7%B8%EB%9E%98%EB%B0%8D" target="_blank">YouTube</a>
+    <a href="https://github.com/HANGEUM" target="_blank">GitHub</a>
+  </div>
+
+<!-- Open Terminal Button -->
+<div class="terminal-launch">
+  <button id="open-terminal-btn" onclick="openterminal()">
+    > ENTER TERMINAL
+  </button>
+</div>
+</section>
+
+<br/><br/><br/><br/><br/><br/><br/>
+
+<main class="content-wrapper">
+    <!-- Welcome Message -->
+     <br>
+      <img src="./public/bg.png" alt="BG" style="width: 100%;"/>
+      <h1>Welcome to HGGRAMMING!</h1>
+      <h3>
+        안녕하세요! HGGRAMMING에 오신 것을 환영합니다.  
+        이 채널은 개발, 운영체제, 가상머신, 시스템 실험 등 다양한 주제를 다루고 있습니다.  
+        아래 명령어를 입력하여 더 많은 정보를 확인해보세요!
+      </h3>
+      <p class="tip">
+        Tip: 터미널에서 <code>help</code> 명령어를 입력하여 사용 가능한 명령어 목록을 확인할 수 있습니다.
+      </p>
+  </main>
+
+  <br/><br/><br/><br/><br/><br/><br/>
+
+  <main class="content-wrapper">
+    <!-- Features Section -->
+      <br>
+      <h2 style="text-align : center;font-size: 37px;">채널 주요 기능</h2>
+      <div class="feature-cards">
+        <br>
+        <br>
+        <div class="feature-card">
+          <h3>📺 영상 콘텐츠</h3>
+          <p>
+            다양한 개발 및 시스템 관련 주제의 영상 콘텐츠를 제공합니다.  
+            유튜브 채널에서 확인해보세요!
+          </p>
+          <br>
+          <img src="./public/나만의 OS 만들기.png" alt="영상이미지" style="width:70%;align-items: center;justify-content: center;"/>
+        </div>
+        <br>
+        <br>
+        <div class="feature-card">
+          <h3>🛠️ 실험실</h3>
+          <p>
+            운영체제, 가상머신, 시스템 구조 등 다양한 주제를 실험하고 분석합니다.  
+            실험 결과와 코드를 공유합니다.
+          </p>
+          <br>
+          <img src="./public/tin.exe 컴퓨터 바이러스 실행하기 (7).png" alt="영상이미지" style="width:70%;align-items: center;justify-content: center;"/>
+        </div>
+        <br>
+        <br>
+        <div class="feature-card">
+          <h3>💬 콘텐츠 추천</h3>
+          <p>
+            보고 싶은 주제나 아이디어가 있다면 언제든지 추천해주세요!  
+            여러분의 의견을 반영하여 더 나은 콘텐츠를 만들겠습니다.
+          </p>
+          <br>
+          <img src="./public/Z18.png" alt="영상이미지" style="width:70%;align-items: center;justify-content: center;"/>
+        </div>
+
+      </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="./scripts/main.js"></script>
+  <script src="./scripts/terminal/terminal.js"></script>
+  <script src="./scripts/terminal/typing.js"></script>
+  <script src="./scripts/terminal/commands.js"></script>
+  <script src="./scripts/lod.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HGGRAMMING :: Terminal</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/theme.css" />
+    <link rel="stylesheet" href="./styles/terminal.css" />
+</head>
+<body>
+    <nav class="top-nav-title glass">
+        HGGRAMMING
+    </nav>
+
+    <!-- Top Nav -->
+    <nav class="top-nav glass">
+        <ul class="nav-tabs">
+            <li><a href="index.html">🏠&nbsp;&nbsp;&nbsp;홈</a></li>
+            <li><a href="videos.html">📼&nbsp;&nbsp;&nbsp;영상</a></li>
+            <li><a href="lab.html">?&nbsp;&nbsp;&nbsp;Lab</a></li>
+            <li><a href="about.html">ℹ️&nbsp;&nbsp;&nbsp;About</a></li>
+        </ul>
+    </nav>
+
+    <nav class="top-nav-request glass">
+        <ul class="nav-tabs">
+            <li><a href="request.html">🗨️&nbsp;&nbsp;&nbsp;콘텐츠 추천</a></li>
+            <li><a href="ver.html">⏫&nbsp;&nbsp;&nbsp;버전</a></li>
+        </ul>
+    </nav>
+
+    <br/><br/><br/><br/><br/><br/><br/>
+
+    <!-- Terminal Container -->
+    <section class="terminal-container">
+      <!-- Terminal Header -->
+      <header class="terminal-header">
+        <div class="terminal-buttons">
+          <span class="btn close"></span>
+          <span class="btn minimize"></span>
+          <span class="btn maximize"></span>
+        </div>
+        <div class="terminal-title">
+          hg@hggramming:~$
+        </div>
+      </header>
+
+      <!-- Terminal Body -->
+      <div class="terminal-body" id="terminal-output">
+        <!-- JS로 출력 -->
+        <div class="line">
+          <span class="prompt">hg@hggramming:~$</span>
+          <span class="text">booting system...</span>
+        </div>
+      </div>
+
+      <!-- Terminal Input -->
+      <div class="terminal-input">
+        <span class="prompt">hg@hggramming:~$</span>
+        <input
+          type="text"
+          id="terminal-input"
+          autocomplete="off"
+          autofocus
+          spellcheck="false"
+        />
+      </div>
+    </section>
+
+  <script src="scripts/terminal/terminal.js"></script>
+  <script src="scripts/terminal/typing.js"></script>
+  <script src="scripts/terminal/commands.js"></script>
+  <script src="scripts/lod.js"></script>
+</body>
+</html>

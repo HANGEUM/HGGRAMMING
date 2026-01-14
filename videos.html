@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>HGGRAMMING :: Videos</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/theme.css" />
+  <link rel="stylesheet" href="./styles/cards.css" />
+</head>
+
+<body>
+  <!-- Top Nav Title -->
+  <nav class="top-nav-title glass">
+    HGGRAMMING
+  </nav>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav glass">
+    <ul class="nav-tabs">
+      <li><a href="index.html">🏠&nbsp;&nbsp;&nbsp;홈</a></li>
+      <li><a href="videos.html" class="active">📼&nbsp;&nbsp;&nbsp;영상</a></li>
+      <li><a href="lab.html">?&nbsp;&nbsp;&nbsp;Lab</a></li>
+      <li><a href="about.html">ℹ️&nbsp;&nbsp;&nbsp;About</a></li>
+    </ul>
+  </nav>
+
+  <nav class="top-nav-request glass">
+    <ul class="nav-tabs">
+      <li><a href="request.html">🗨️&nbsp;&nbsp;&nbsp;콘텐츠 추천</a></li>
+      <li><a href="ver.html">⏫&nbsp;&nbsp;&nbsp;버전</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>Videos</h1>
+    <p>Development · OS · Virtual Machine · Experiments</p>
+  </header>
+
+  <!-- Search + Filters -->
+<div class="video-controls glass">
+  <input
+    type="text"
+    id="video-search"
+    placeholder="Search videos..."
+    autocomplete="off"
+  />
+
+  <div class="video-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="videos">Videos</button>
+    <button class="filter-btn" data-filter="shorts">Shorts</button>
+    <button class="filter-btn" data-filter="playlists">Playlists</button>
+  </div>
+</div>
+
+  <!-- Video Grid -->
+  <main class="video-grid">
+
+    <!-- Video Card -->
+    <article
+      class="video-card glass"
+      data-type="videos"
+      data-title="os 개발 환경 구축하기"
+      onclick="location.href='https://www.youtube.com/watch?v=c6urV8b7R-Q';"
+      >
+      <img src="public/나만의 OS 개발 환경 구축하기.png" alt="thumbnail" />
+      <div class="video-info">
+        <h2>OS 개발 환경 구축하기</h2>
+        <span>2026-01-10</span>
+      </div>
+    </article>
+
+    <article 
+    class="video-card glass" 
+    data-type="videos"
+    data-title="tin.exe 바이러스 실행하기 [ 가상머신 ]"
+    onclick="location.href='https://www.youtube.com/watch?v=iKpSZC0Td2k';"
+    >
+      <img src="public/tin.exe 컴퓨터 바이러스 실행하기 (7).png" alt="thumbnail" />
+      <div class="video-info">
+        <h2>tin.exe 바이러스 실행하기 [ 가상머신 ]</h2>
+        <span>2026-01-08</span>
+      </div>
+    </article>
+
+    <article
+      class="video-card glass"
+      data-type="videos"
+      data-title="리눅스 입문 • 초심자 분들에게 추천드립니다 - zorin os"
+      onclick="location.href='https://www.youtube.com/watch?v=i-NyUnZ-Z58';"
+      >
+      <img src="public/Z18.png" alt="thumbnail" />
+      <div class="video-info">
+        <h2>리눅스 입문 • 초심자 분들에게 추천드립니다 - Zorin OS</h2>
+        <span>2026-01-06</span>
+      </div>
+    </article>
+
+    <article
+      class="video-card glass"
+      data-type="shorts"
+      data-title="html로 os 사이트 구현하기"
+      onclick="location.href='https://www.youtube.com/watch?v=3sSHr-hb-TQ';"
+      >
+      <img src="public/HTML로 OS 사이트 구현하기.png" alt="thumbnail" />
+      <div class="video-info">
+        <h2>HTML로 OS 사이트 구현하기</h2>
+        <span>2026-01-01</span>
+      </div>
+    </article>
+    <article
+      class="video-card glass"
+      data-type="playlists"
+      data-title="os development playlist"
+      onclick="location.href='playlist.html';"
+    >
+      <img src="public/나만의 OS 만들기.png" />
+      <div class="video-info">
+        <h2>OS 개발</h2>
+        <span>Playlist 강의</span>
+      </div>
+    </article>
+  </main>
+<script src="./scripts/videos-filter.js"></script>
+</body>
+</html>
